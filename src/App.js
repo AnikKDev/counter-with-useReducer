@@ -1,6 +1,7 @@
 import { createContext, useReducer, useState } from 'react';
 import Child from './components/Child';
 import Counter from './components/Counter';
+import LongForm from './components/LongForm';
 import Parent from './components/Parent';
 import ShortForm from './components/ShortForm';
 export const COUNTER_CONTEXT = createContext();
@@ -22,9 +23,7 @@ function App() {
 
   return (
     <div>
-      {/* <Parent /> */}
-      {/* <ShortForm /> */}
-      <Counter />
+      <LongForm />
     </div>
   );
 }
